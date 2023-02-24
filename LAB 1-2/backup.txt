@@ -1,0 +1,528 @@
+karthik@karthik-Inspiron-15-3511:~/practise$ touch .1.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+karthik@karthik-Inspiron-15-3511:~/practise$ ls .
+karthik@karthik-Inspiron-15-3511:~/practise$ ls -a
+.  ..  .1.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ touch file1.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ touch file2.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ touch file3.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls file?.txt
+file1.txt  file2.txt  file3.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls fi*.txt
+file1.txt  file2.txt  file3.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls *up.txt
+backup.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ file file1.txt
+file1.txt: empty
+karthik@karthik-Inspiron-15-3511:~/practise$ cat backup.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ touch .1.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+karthik@karthik-Inspiron-15-3511:~/practise$ ls .
+karthik@karthik-Inspiron-15-3511:~/practise$ ls -a
+.  ..  .1.txt
+ls > greetings.txt && cat greetings.txt
+apple.txt
+backup.txt
+bigf.exe
+bro.txt
+file1.txt
+file2
+file2.txt
+file3
+file.txt
+f.zip
+greetings.txt
+greeting.txt
+hi
+karthik@karthik-Inspiron-15-3511:~/practise$ touch file1.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ touch file2.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ touch file3.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls file?.txt
+file1.txt  file2.txt  file3.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls fi*.txt
+file1.txt  file2.txt  file3.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls *up.txt
+backup.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ file file1.txt
+file1.txt: empty
+karthik-Inspiron-15-3511:~/practise$ cp file1.txt file2.txt && cat file2.txt
+hello
+word
+great 
+karthik@karthik-Inspiron-15-3511:~/practise$ mv file2.txt file1.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ rm ABC.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+backup.txt  file1.txt  file3.txt  file.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ mkdir joke
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+backup.txt  file1.txt  file3.txt  file.txt  joke
+karthik@karthik-Inspiron-15-3511:~/practise$ rmdir joke
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+backup.txt  file1.txt  file3.txt  file.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ which grep
+/usr/bin/grep
+karthik@karthik-Inspiron-15-3511:~/practise$ whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+karthik@karthik-Inspiron-15-3511:~/practise$ locate file1.txt
+/home/karthik/practise/file1.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ find backup.txt
+backup.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ cat > greetings.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+backup.txt  file1.txt  file3.txt  file.txt  greetings.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ cat >> greeting.txt
+greeting!
+karthik@karthik-Inspiron-15-3511:~/practise$ ls && cat greeting.txt
+backup.txt  file1.txt  file3.txt  file.txt  greetings.txt  greeting.txt
+greeting!
+karthik@karthik-Inspiron-15-3511:~/practise$ head -n 2 file1.txt
+hello
+word
+karthik@karthik-Inspiron-15-3511:~/practise$ tail -c 2 file1.txt
+ld
+karthik@karthik-Inspiron-15-3511:~/practise$ cp -n file1.txt greeting.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ cat greeting.txt
+greeting!
+karthik@karthik-Inspiron-15-3511:~/practise$ cp -i file1.txt greeting.txt
+cp: overwrite 'greeting.txt'? y
+karthik@karthik-Inspiron-15-3511:~/practise$ cat greeting.txt
+hello
+word
+great 
+karthik@karthik-Inspiron-15-3511:~/practise$ cp -f file1.txt file3.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ cat file3.txt
+hello
+word
+great 
+karthik@karthik-Inspiron-15-3511:~/practise$ mv file3.txt file1.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+backup.txt  file1.txt  file.txt  greetings.txt  greeting.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ mkdir hello
+karthik@karthik-Inspiron-15-3511:~/practise$ cd hello
+karthik@karthik-Inspiron-15-3511:~/practise/hello$ mkdir bye
+karthik@karthik-Inspiron-15-3511:~/practise/hello$ cd bye
+karthik@karthik-Inspiron-15-3511:~/practise/hello/bye$ cd ..
+karthik@karthik-Inspiron-15-3511:~/practise/hello$ cd ..
+karthik@karthik-Inspiron-15-3511:~/practise$ rm -r hello
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+backup.txt  file1.txt  file2  file2.txt  file3  file.txt  greetings.txt  greeting.txt
+
+a. has the extension .txt.
+karthik@karthik-Inspiron-15-3511:~/practise$ find -name "*.txt"
+./file.txt
+./greetings.txt
+./greeting.txt
+./backup.txt
+./file2.txt
+./file1.txt
+./.1.txt
+
+b. containing atleast one digit.
+karthik@karthik-Inspiron-15-3511:~/practise$ find -name "*[0-9]"
+./file2
+./file3
+
+c. having minimum length of 4.
+karthik@karthik-Inspiron-15-3511:~/practise$ ls ????
+file.txt
+
+d. does not contain any of the vowels as the start letter.
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+apple.txt   bigf.exe  file1.txt  file2.txt  file.txt  greetings.txt  hi
+backup.txt  bro.txt   file2      file3      f.zip     greeting.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ ls [!a,e,i,o,u]*
+backup.txt  bro.txt    file2      file3     f.zip          greeting.txt
+bigf.exe    file1.txt  file2.txt  file.txt  greetings.txt
+
+
+
+
+
+                    *END OF LAB 1*
+                    								
+karthik@karthik-Inspiron-15-3511:~/practise$ cat >> file.txt
+hello
+hell
+head
+heard
+karthik@karthik-Inspiron-15-3511:~/practise$ grep he file.txt
+hello
+hello
+hell
+head
+heard
+karthik@karthik-Inspiron-15-3511:~/practise$ grep -x hell file.txt
+hell
+karthik@karthik-Inspiron-15-3511:~/practise$ grep ^he file.txt
+hello
+hello
+hell
+head
+heard
+karthik@karthik-Inspiron-15-3511:~/practise$ grep -v he file.txt
+hi
+whats up everyone!
+good moring everyone!
+noob
+bye
+karthik@karthik-Inspiron-15-3511:~/practise$ wc file.txt
+10 14 81 file.txt
+karthik@karthik-Inspiron-15-3511:~/practise$ cat num.txt
+56
+2
+34
+1
+45
+109
+21
+karthik@karthik-Inspiron-15-3511:~/practise$ sort -n num.txt
+1
+2
+21
+34
+45
+56
+109
+karthik@karthik-Inspiron-15-3511:~/practise$ sort file.txt
+bye
+good moring everyone!
+head
+heard
+hell
+hello
+hello
+hi
+noob
+whats up everyone!
+karthik@karthik-Inspiron-15-3511:~/practise$ sort -r file.txt
+whats up everyone!
+noob
+hi
+hello
+hello
+hell
+heard
+head
+good moring everyone!
+bye
+               karthik@karthik-Inspiron-15-3511:~/practise$ sed 's/hell/heaven/g' file.txt
+hi
+heaveno
+whats up everyone!
+good moring everyone!
+noob
+heaveno
+heaven
+head
+heard
+bye
+karthik@karthik-Inspiron-15-3511:~/practise$ tr "[a-z]" "[A-Z]" < file.txt
+HI
+HELLO
+WHATS UP EVERYONE!
+GOOD MORING EVERYONE!
+NOOB
+HELLO
+HELL
+HEAD
+HEARD
+BYE
+karthik@karthik-Inspiron-15-3511:~$ ps
+    PID TTY          TIME CMD
+  10063 pts/0    00:00:00 bash
+  10198 pts/0    00:00:00 ps
+karthik@karthik-Inspiron-15-3511:~$ kill -S KILL 10063
+killed the terminal
+karthik@karthik-Inspiron-15-3511:~$ bc
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'. 
+5+7
+12
+karthik@karthik-Inspiron-15-3511:~$ cat >> file.txt
+hi
+gg
+op
+karthik@karthik-Inspiron-15-3511:~$ grep -E '^.{2}$' file.txt
+hi
+gg
+op
+karthik@karthik-Inspiron-15-3511:~$ cat >> file.txt
+Hiphop
+karthik@karthik-Inspiron-15-3511:~$ grep -E ^[A-Z] file.txt
+Hiphop
+karthik@karthik-Inspiron-15-3511:~$ cat >> file.txt
+period.
+karthik@karthik-Inspiron-15-3511:~$ grep -E '\.$' file.txt
+period.
+karthik@karthik-Inspiron-15-3511:~$ cat >> file.txt
+hi hello
+karthik@karthik-Inspiron-15-3511:~$ grep '\s' file.txt
+hi hello
+karthik@karthik-Inspiron-15-3511:~$ cat >> file.txt
+12
+29
+485
+28
+karthik@karthik-Inspiron-15-3511:~$ grep '[0-9]' file.txt>file3.txt
+karthik@karthik-Inspiron-15-3511:~$ cat file3.txt
+12
+29
+485
+28
+karthik@karthik-Inspiron-15-3511:~$ nano studentInformation.txt
+RegistrationNo:Name:Department:Branch:Section:Sub1:Sub>
+1234:xyz:ICT:IT:B:80:90:80
+456:XYI:DSE:DSE:A:90,90,80
+4597:XYY:CSE:CSE:C:90,80,70
+karthik@karthik-Inspiron-15-3511:~$ grep -E "ICT" studentInformation.txt | wc -l
+1
+karthik@karthik-Inspiron-15-3511:~$ sed 's/IT/InformationTechnology/g' studentInformation.txt
+RegistrationNo:Name:Department:Branch:Section:Sub1:Sub2:Sub3
+1234:xyz:ICT:InformationTechnology:B:80:90:80
+456:XYI:DSE:DSE:A:90,90,80
+4597:XYY:CSE:CSE:C:90,80,70	
+karthik@karthik-Inspiron-15-3511:~/practise$ ls -l | grep "MIT"
+karthik@karthik-Inspiron-15-3511:~/practise$ sed -e 's/MIT/NIT/g' file2.txt file3.txt
+NIT
+NIT MAHE
+karthik@karthik-Inspiron-15-3511:~/practise$ wc 'find .name' *[0-9]*
+wc: 'find .name': No such file or directory
+ 4  4 24 file1.txt
+ 0  0  0 file2
+ 1  1  4 file2.txt
+ 0  0  0 file3
+ 1  2  9 file3.txt
+ 6  7 37 total
+
+
+
+                                  end of lab 2
+1.
+
+#!/bin/bash
+
+# Prompt the user to enter the file name to check
+echo  "Enter the name of the file to check: "
+read  filename
+
+# Check if the file exists
+if [ ! -e "$filename" ]; then
+#-e checks if the file exists or not
+    echo "$filename does not exist"
+    exit 1
+fi
+
+# Check if the file is a directory or a regular file
+if [ -d "$filename" ]; then
+    echo "$filename is a directory"
+elif [ -f "$filename" ]; then
+    echo "$filename is a regular file"
+else
+    echo "$filename is not a valid file or directory"
+    exit 1
+fi
+
+
+Enter the name of the file to check: 
+file2.exe
+file2.exe does not exist
+karthik@karthik-Inspiron-15-3511:~/practise$ bash filecheck.sh
+Enter the name of the file to check: 
+file2.txt
+file2.txt is a regular file
+karthik@karthik-Inspiron-15-3511:~/practise$ bash filecheck.sh
+Enter the name of the file to check: 
+hi
+hi is a directory
+
+2.
+
+#!/bin/bash
+
+# Ask user for directory name and pattern to search for
+read -p "Enter directory name: " dirname
+read -p "Enter pattern to search for: " pattern
+
+# Check if directory exists
+if [ ! -d "$dirname" ]; then
+  echo "Directory does not exist."
+  exit 1
+fi
+
+# Change to the directory specified by the user
+cd "$dirname" || exit 1
+
+# List all files that contain the specified pattern
+grep -l "$pattern" * | sed 's/^.*\///'
+
+karthik@karthik-Inspiron-15-3511:~/practise$ bash l3q2.sh
+Enter directory name: hi
+Enter pattern to search for: 12
+file1.txt
+file2.txt
+
+3.
+
+#!/bin/bash
+
+# This script replaces all files with a .txt extension in the current directory and all its subdirectories with a .text extension.
+
+# Find all files with a .txt extension recursively in the current directory and its subdirectories
+files=$(find . -type f -name "*.txt")
+
+# Loop through each file
+for file in $files; do
+    # Get the filename without the path or extension
+    filename=$(basename "$file" .txt)
+
+    # Get the directory path
+    dir=$(dirname "$file")
+
+    # Rename the file by adding the .text extension
+    mv "$file" "$dir/$filename.text"
+done
+
+echo "All files with .txt extension in the current directory and its subdirectories have been renamed to .text."
+
+karthik@karthik-Inspiron-15-3511:~/practise$ bash l3q3.sh
+All files with .txt extension in the current directory and its subdirectories have been renamed to .text.
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+backup.text  bro.text    file2       file3       filecheck.sh  f.zip           greeting.text  l3q2.sh  life.text
+bigf.exe     file1.text  file2.text  file3.text  file.text 
+
+4.
+
+#!/bin/bash
+
+# This script calculates the gross salary, given the basic salary and the travel allowance (TA)
+
+# Read the basic salary from the user
+echo "Enter basic salary:"
+read basic
+
+# Read the travel allowance (TA) from the user
+echo "Enter travel allowance (TA):"
+read ta
+
+# Calculate the gross salary using floating point arithmetic
+gs=$(echo "$basic + $ta + ($basic * 0.1)" | bc)
+
+# Print the result to the console
+echo "Gross salary: $gs"
+
+karthik@karthik-Inspiron-15-3511:~/practise$ bash l3q4.sh
+Enter basic salary:
+10000
+Enter travel allowance (TA):
+2000
+Gross salary: 13000.0
+
+5.
+
+#!/bin/bash
+
+# This script copies all files with a certain file extension from the current directory to a new directory
+
+# Read the file extension from the user
+echo "Enter file extension:"
+read ext
+
+# Read the directory name to copy the files to
+echo "Enter destination directory name:"
+read dir
+
+# Create the destination directory if it doesn't exist
+if [ ! -d "$dir" ]
+then
+    mkdir "$dir"
+fi
+
+# Loop through all files in the current directory
+for file in *
+do
+    # Check if the file has the given extension
+    if [ "${file##*.}" = "$ext" ]
+    then
+        # Copy the file to the destination directory
+        cp "$file" "$dir"
+    fi
+done
+
+# Print a message to the user indicating that the operation is complete
+echo "All files with extension .$ext have been copied to $dir"
+
+karthik@karthik-Inspiron-15-3511:~/practise$ bash l3q5.sh
+Enter file extension:
+text
+Enter destination directory name:
+copy
+All files with extension .text have been copied to copy
+karthik@karthik-Inspiron-15-3511:~/practise$ ls
+backup.text  bigf.exe  copy        file2       file3       filecheck.sh  f.zip           greeting.text  l3q2.sh  l3q4.sh  life.text
+backup.txt   bro.text  file1.text  file2.text  file3.text  file.text     greetings.text  hi             l3q3.sh  l3q5.sh  num.text
+karthik@karthik-Inspiron-15-3511:~/practise$ cd copy
+karthik@karthik-Inspiron-15-3511:~/practise/copy$ ls
+backup.text  bro.text  file1.text  file2.text  file3.text  file.text  greetings.text
+
+6. 
+
+#!/bin/bash
+
+# loop through all the files in the current directory
+for file in *
+do
+  # check if the file is a regular file
+  if [ -f "$file" ]
+  then
+    # use sed to replace all occurrences of "ex:" at the beginning of the line or after a period (.)
+    # with "Example:"
+    sed -i -r 's/(^|\.)ex:/\1Example:/g' "$file"
+  fi
+done
+
+
+7.
+
+#!/bin/bash
+
+# Ask user for input file name
+echo "Enter the input file name: "
+read input_file
+
+# Ask user for output file name
+echo "Enter the output file name: "
+read output_file
+
+# Use sed to delete all even numbered lines and save output to the output file
+sed 'n;d' $input_file > $output_file
+
+# Display success message
+echo "Even numbered lines deleted successfully!"
+
+karthik@karthik-Inspiron-15-3511:~/practise$ bash l3q7.sh
+Enter the input file name: 
+file.text
+Enter the output file name: 
+greeting.txt
+Even numbered lines deleted successfully!
+karthik@karthik-Inspiron-15-3511:~/practise$ greeting.txt
+greeting.txt: command not found
+karthik@karthik-Inspiron-15-3511:~/practise$ cat greeting.txt
+hi
+whats up everyone!
+noob
+hell
+heard
+ex
+
+
+
+
+LAB 4
+
+1.
+
+
+
