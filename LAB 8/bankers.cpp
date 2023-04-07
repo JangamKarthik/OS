@@ -49,7 +49,7 @@ int main()
             need[i][j] = max[i][j] - alloc[i][j];
     }
     int y = 0;
-    for (k = 0; k < 5; k++)
+    for (k = 0; k < n; k++)
     {
         for (i = 0; i < n; i++)
         {
